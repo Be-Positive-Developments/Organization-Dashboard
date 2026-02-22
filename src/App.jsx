@@ -1,35 +1,28 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./styles/App.css";
+import { LanguageProvider } from './contexts/language-context';
+import { Navbar } from './components/navbar';
+import { HeroSection } from './components/hero-section';
+import { AboutSection } from './components/about-section';
+import { IdeaSection } from './components/idea-section';
+import { MissionSection } from './components/mission-section';
+import { FeaturesSection } from './components/features-section';
+import { ContactSection } from './components/contact-section';
+import { Footer } from './components/footer';
+import { ScrollToTop } from './components/scroll-to-top';
 
-function App() {
-  const [count, setCount] = useState(0);
-
+export default function App() {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank" rel="noreferrer">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank" rel="noreferrer">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <LanguageProvider>
+      <div className="min-h-screen">
+        <Navbar />
+        <HeroSection />
+        <AboutSection />
+        <IdeaSection />
+        <MissionSection />
+        <FeaturesSection />
+        <ContactSection />
+        <Footer />
+        <ScrollToTop />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  );
-}
+    </LanguageProvider>);
 
-export default App;
+}
