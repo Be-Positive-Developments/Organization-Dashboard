@@ -90,7 +90,12 @@ const translations = {
     'footer.team': 'by our team',
 
     // Scroll to top
-    'scroll.top': 'Back to Top'
+    'scroll.top': 'Back to Top',
+
+    // 404 Page
+    'notfound.title': 'Page Not Found',
+    'notfound.message': "Sorry, the page you looking for doesn't exist or has been moved.",
+    'notfound.backHome': 'Back to Home'
   },
   ar: {
     // Hero Section
@@ -171,7 +176,12 @@ const translations = {
     'footer.team': 'من قبل فريقنا',
 
     // Scroll to top
-    'scroll.top': 'العودة للأعلى'
+    'scroll.top': 'العودة للأعلى',
+
+    // 404 Page
+    'notfound.title': 'الصفحة غير موجودة',
+    'notfound.message': 'عذراً، الصفحة التي تبحث عنها غير موجودة أو تم نقلها.',
+    'notfound.backHome': 'العودة للرئيسية'
   }
 };
 
