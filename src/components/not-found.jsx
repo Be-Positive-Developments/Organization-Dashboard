@@ -1,10 +1,12 @@
 import { motion } from "motion/react";
 import { useLanguage } from "../contexts/language-context";
+import { useDocumentTitle } from "../hooks/use-document-title";
 import { Home, Search } from "lucide-react";
 import { Link } from "react-router";
 
 export function NotFound() {
   const { t } = useLanguage();
+  useDocumentTitle("404 - Not Found | Be Positive");
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-background px-6">

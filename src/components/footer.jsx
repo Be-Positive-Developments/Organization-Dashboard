@@ -54,7 +54,7 @@ export function Footer() {
             {t('footer.tagline')}
           </p>
           <p className="text-sm text-gray-500">
-            © 2026 {t('hero.title')}. {language === 'ar' ? 'جميع الحقوق محفوظة.' : 'All rights reserved.'}
+            © {new Date().getFullYear()} {t('hero.title')}. {language === 'ar' ? 'جميع الحقوق محفوظة.' : 'All rights reserved.'}
           </p>
           <p className="text-sm text-gray-500 mt-2">
             {t('footer.made')} <span className="text-red-500">❤️</span> {t('footer.team')}
