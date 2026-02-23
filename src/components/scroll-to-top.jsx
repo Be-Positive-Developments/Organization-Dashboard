@@ -39,7 +39,7 @@ export function ScrollToTop() {
         exit={{ opacity: 0, scale: 0, y: 100 }}
         transition={{ duration: 0.3, ease: 'easeOut' }}
         onClick={scrollToTop}
-        className="fixed bottom-8 right-8 z-50 group"
+        className="fixed bottom-8 right-8 z-50 group cursor-pointer"
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
         aria-label={t('scroll.top')}>
